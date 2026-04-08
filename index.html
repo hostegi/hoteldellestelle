@@ -13,13 +13,13 @@ body{background:var(--bianco);color:#2C2C2C;font-family:'Cormorant Garamond',ser
 
 .hero{height:100vh;min-height:600px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
 .hero-bg{position:absolute;inset:0;background:linear-gradient(160deg,#0E1A3D 0%,#1A2B5F 55%,#1e3a6e 100%);z-index:0;}
-.hero-img{position:absolute;inset:0;background:url('https://raw.githubusercontent.com/hostegi/img/main/sposa.jpeg') center/cover no-repeat;opacity:0.2;z-index:1;}
+.hero-img{position:absolute;inset:0;background:url('https://hostegi.github.io/imgh/sposa.jpeg') center 70%/cover no-repeat;opacity:0.22;z-index:1;}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(14,26,61,0.15) 0%,rgba(14,26,61,0.82) 100%);z-index:2;}
 .hero-content{position:relative;z-index:3;padding:24px;display:flex;flex-direction:column;align-items:center;width:100%;max-width:700px;}
 
-.logo-hero{width:280px;height:auto;display:block;margin:0 auto 32px;filter:drop-shadow(0 2px 20px rgba(0,0,0,0.6));}
+.logo-hero{width:280px;height:auto;display:block;margin:0 auto 32px;filter:drop-shadow(0 2px 20px rgba(0,0,0,0.6)) brightness(1.2);}
 
-.hero-badge{display:inline-block;border:1px solid rgba(201,168,76,0.55);color:#E8D5A3;font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;padding:7px 22px;margin-bottom:26px;}
+.hero-badge{display:inline-block;border:1px solid rgba(201,168,76,0.55);color:#E8D5A3;font-family:'Cinzel',serif;font-size:8.5px;letter-spacing:2px;padding:7px 18px;margin-bottom:26px;white-space:nowrap;}
 .hero h1{font-family:'Cinzel',serif;color:#fff;font-size:clamp(24px,6vw,52px);font-weight:400;letter-spacing:3px;line-height:1.15;margin-bottom:10px;}
 .hero h1 em{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;color:#C9A84C;font-size:1.12em;letter-spacing:2px;}
 .hero-sub{color:rgba(255,255,255,0.6);font-size:clamp(12px,2.5vw,15px);letter-spacing:2px;font-style:italic;margin-bottom:36px;}
@@ -63,6 +63,7 @@ body{background:var(--bianco);color:#2C2C2C;font-family:'Cormorant Garamond',ser
 .evento-nome{font-family:'Cinzel',serif;color:#1A2B5F;font-size:11px;letter-spacing:2px;}
 .evento-linea{width:24px;height:1px;background:#C9A84C;margin:8px auto 0;opacity:.5;}
 
+/* GALLERY */
 .gallery-bg{background:#0E1A3D;}
 .gallery-bg .titolo-sezione{color:#fff;}
 .gallery-bg .tag-sezione{color:#E8D5A3;}
@@ -77,6 +78,7 @@ body{background:var(--bianco);color:#2C2C2C;font-family:'Cormorant Garamond',ser
 .gallery-hint{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.3);font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;margin-top:20px;}
 .gallery-hint::before,.gallery-hint::after{content:'';flex:1;max-width:60px;height:1px;background:rgba(201,168,76,0.2);}
 
+/* ACCORDION */
 .pannello-wrap{width:100%;max-width:780px;margin-top:20px;}
 .pannello-btn{width:100%;background:transparent;border:1px solid rgba(201,168,76,0.4);color:#C9A84C;font-family:'Cinzel',serif;font-size:11px;letter-spacing:2.5px;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;transition:all .3s;margin-bottom:2px;}
 .pannello-btn:hover{background:rgba(201,168,76,0.06);border-color:#C9A84C;}
@@ -101,6 +103,7 @@ body{background:var(--bianco);color:#2C2C2C;font-family:'Cormorant Garamond',ser
 .servizio-nome{font-family:'Cinzel',serif;color:#1A2B5F;font-size:9px;letter-spacing:1.5px;margin-bottom:4px;}
 .servizio-prezzo{color:#C9A84C;font-style:italic;font-size:13px;}
 
+/* AWARDS */
 .awards-grid{display:flex;flex-wrap:wrap;gap:36px;align-items:center;justify-content:center;max-width:700px;margin:0 auto;}
 .award-card{text-align:center;}
 .award-card img{display:block;max-width:130px;margin:0 auto;mix-blend-mode:multiply;}
@@ -113,8 +116,9 @@ body{background:var(--bianco);color:#2C2C2C;font-family:'Cormorant Garamond',ser
 .matrimonio-link:hover{opacity:1;}
 .matrimonio-link img{max-width:160px;display:block;margin:0 auto;}
 
+/* CONTATTI */
 .contatti-bg{background:linear-gradient(160deg,#0E1A3D 0%,#1A2B5F 100%);position:relative;overflow:hidden;}
-.contatti-bg::before{content:'';position:absolute;inset:0;background:url('https://raw.githubusercontent.com/hostegi/img/main/ingressosposi.jpeg') center/cover no-repeat;opacity:0.1;}
+.contatti-bg::before{content:'';position:absolute;inset:0;background:url('https://hostegi.github.io/imgh/entrata.jpeg') center/cover no-repeat;opacity:0.1;}
 .contatti-content{position:relative;z-index:1;text-align:center;max-width:560px;}
 .contatti-bg .titolo-sezione{color:#fff;}
 .contatti-bg .tag-sezione{color:#E8D5A3;}
@@ -150,77 +154,149 @@ footer{background:#070f24;padding:28px 24px;text-align:center;color:rgba(255,255
   <div class="nav-dot" onclick="scrollA('contatti')"><span class="tooltip">CONTATTI</span></div>
 </nav>
 
+<!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-bg"></div>
   <div class="hero-img"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <img class="logo-hero"
-      src="https://raw.githubusercontent.com/hostegi/img/main/logosfondotrasparente.svg"
-      alt="Hotel delle Stelle"
-      onerror="this.src='https://raw.githubusercontent.com/hostegi/img/main/logosfondotrasparente.png'">
+      src="https://hostegi.github.io/imgh/logosfondotrasparente.svg"
+      alt="Hotel delle Stelle">
     <div class="hero-badge">BEACH RESORT &middot; SANGINETO LIDO &middot; CALABRIA</div>
     <h1>IL TUO EVENTO<em>da sogno</em></h1>
-    <p class="hero-sub">Matrimoni &middot; Lauree &middot; 18 Anni &middot; Feste Aziendali &middot; In riva al mare</p>
+    <p class="hero-sub">Matrimoni &middot; Lauree &middot; 18 Anni &middot; Feste Aziendali<br>In riva al mare</p>
     <div class="hero-cta">
-      <a href="https://wa.me/390982096091" class="btn-oro-hero" target="_blank">
+      <a href="https://wa.me/39098296091" class="btn-oro-hero" target="_blank">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         SCRIVICI SU WHATSAPP
       </a>
-      <a href="#storia" class="btn-secondario" onclick="scrollA('storia');return false;">SCOPRI DI PIU</a>
+      <a href="#storia" class="btn-secondario" onclick="scrollA('storia');return false;">SCOPRI DI PIÙ</a>
     </div>
   </div>
   <div class="hero-scroll">SCORRI</div>
 </section>
 
+<!-- STORIA / EVENTI -->
 <section class="sezione" id="storia">
   <p class="tag-sezione">OGNI OCCASIONE MERITA IL MEGLIO</p>
   <h2 class="titolo-sezione">Un luogo unico<br>per ogni traguardo</h2>
   <div class="divisore"><div class="div-linea"></div><div class="div-gem"></div><div class="div-linea"></div></div>
   <div class="intro-wrap">
-    <p>Dalle prime luci del giorno fino all&apos;ultimo brindisi, ogni momento del vostro evento sara curato nei minimi dettagli, con scenografie mozzafiato sul mare della Calabria.</p>
+    <p>Dalle prime luci del giorno fino all&rsquo;ultimo brindisi, ogni momento del vostro evento sarà curato nei minimi dettagli, con scenografie mozzafiato sul mare della Calabria.</p>
     <p>Matrimoni, lauree, diciottesimi, feste aziendali e congressi: il nostro team vi accompagna in ogni scelta, trasformando ogni celebrazione in un ricordo indelebile.</p>
   </div>
   <div class="eventi-grid">
     <div class="evento-card"><p class="evento-nome">MATRIMONI</p><div class="evento-linea"></div></div>
     <div class="evento-card"><p class="evento-nome">LAUREE</p><div class="evento-linea"></div></div>
-    <div class="evento-card"><p class="evento-nome">18 ANNI</p><div class="evento-linea"></div></div>
+    <div class="evento-card"><p class="evento-nome">18 ANNI &amp; COMPLEANNI</p><div class="evento-linea"></div></div>
     <div class="evento-card"><p class="evento-nome">EVENTI AZIENDALI</p><div class="evento-linea"></div></div>
     <div class="evento-card"><p class="evento-nome">ANNIVERSARI</p><div class="evento-linea"></div></div>
     <div class="evento-card"><p class="evento-nome">FESTE PRIVATE</p><div class="evento-linea"></div></div>
     <div class="evento-card"><p class="evento-nome">CONGRESSI</p><div class="evento-linea"></div></div>
     <div class="evento-card"><p class="evento-nome">EVENTI SPECIALI</p><div class="evento-linea"></div></div>
+    <div class="evento-card"><p class="evento-nome">BATTESIMI</p><div class="evento-linea"></div></div>
+    <div class="evento-card"><p class="evento-nome">COMUNIONI</p><div class="evento-linea"></div></div>
+    <div class="evento-card"><p class="evento-nome">CRESIME</p><div class="evento-linea"></div></div>
   </div>
   <div class="intro-foto" style="margin-top:48px;">
-    <img src="https://raw.githubusercontent.com/hostegi/img/main/spositavoloparco.jpeg" alt="Sposi al tavolo" loading="lazy">
+    <img src="https://hostegi.github.io/imgh/cortel.jpeg" alt="La Corte" loading="lazy">
     <div class="intro-foto-label">HOTEL DELLE STELLE BEACH RESORT</div>
   </div>
 </section>
 
+<!-- GALLERY -->
 <section class="sezione gallery-bg" id="gallery">
   <p class="tag-sezione">I NOSTRI SPAZI</p>
   <h2 class="titolo-sezione" style="color:#fff;">Ogni angolo racconta una storia</h2>
   <div class="divisore"><div class="div-linea" style="background:rgba(201,168,76,0.4)"></div><div class="div-gem"></div><div class="div-linea" style="background:rgba(201,168,76,0.4)"></div></div>
   <div class="gallery-scroll">
-    <div class="gallery-card"><img src="https://raw.githubusercontent.com/hostegi/img/main/ritocivilesfondomare.jpeg" alt="Mare" loading="lazy"><div class="gallery-card-label"><h3>IN RIVA AL MARE</h3><p>Cerimonia con vista sul Tirreno</p></div></div>
-    <div class="gallery-card"><img src="https://raw.githubusercontent.com/hostegi/img/main/Corte.jpeg" alt="Corte" loading="lazy"><div class="gallery-card-label"><h3>LA CORTE</h3><p>Aperitivo tra archi in pietra e luci soffuse</p></div></div>
-    <div class="gallery-card"><img src="https://raw.githubusercontent.com/hostegi/img/main/cenaparcostellato.jpeg" alt="Parco" loading="lazy"><div class="gallery-card-label"><h3>IL PARCO</h3><p>Cena sotto le stelle tra luci dorate</p></div></div>
-    <div class="gallery-card"><img src="https://raw.githubusercontent.com/hostegi/img/main/tavoloparco.jpeg" alt="Tavolo parco" loading="lazy"><div class="gallery-card-label"><h3>TAVOLA IMPERIALE</h3><p>Allestimenti scenografici su misura</p></div></div>
-    <div class="gallery-card"><img src="https://raw.githubusercontent.com/hostegi/img/main/Salariotorante2.jpeg" alt="Sala" loading="lazy"><div class="gallery-card-label"><h3>LA SALA</h3><p>Eleganza con archi in pietra</p></div></div>
-    <div class="gallery-card"><img src="https://raw.githubusercontent.com/hostegi/img/main/CORIANDOLI.jpeg" alt="Piscina" loading="lazy"><div class="gallery-card-label"><h3>BORDO PISCINA</h3><p>Dolci e torta con vista mare</p></div></div>
-    <div class="gallery-card"><img src="https://raw.githubusercontent.com/hostegi/img/main/ingressosposi.jpeg" alt="Ingresso" loading="lazy"><div class="gallery-card-label"><h3>L&apos;INGRESSO</h3><p>Il momento piu atteso della serata</p></div></div>
-    <div class="gallery-card"><img src="https://raw.githubusercontent.com/hostegi/img/main/ANGOLORUM1.jpg" alt="Rum" loading="lazy"><div class="gallery-card-label"><h3>ANGOLO RUM &amp; SIGARI</h3><p>Un tocco di esclusivita per gli ospiti</p></div></div>
-    <div class="gallery-card"><img src="https://raw.githubusercontent.com/hostegi/img/main/ANGOLO%20coriandoli.jpg" alt="Festa" loading="lazy"><div class="gallery-card-label"><h3>LA FESTA</h3><p>Emozioni e spettacolo fino all&apos;alba</p></div></div>
-    <div class="gallery-card"><img src="https://raw.githubusercontent.com/hostegi/img/main/TORTASPOSI.jpg" alt="Torta" loading="lazy"><div class="gallery-card-label"><h3>LA TORTA</h3><p>Il taglio piu dolce della vostra vita</p></div></div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/rito.jpeg" alt="Rito civile" loading="lazy">
+      <div class="gallery-card-label"><h3>IN RIVA AL MARE</h3><p>Cerimonia con vista sul Tirreno</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/Corte.jpeg" alt="La Corte" loading="lazy">
+      <div class="gallery-card-label"><h3>LA CORTE</h3><p>Aperitivo tra archi in pietra e luci soffuse</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/Corte%202.jpeg" alt="La Corte 2" loading="lazy">
+      <div class="gallery-card-label"><h3>LA CORTE</h3><p>Cena sotto le stelle tra luci dorate</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/verde.jpeg" alt="Allestimento" loading="lazy">
+      <div class="gallery-card-label"><h3>ALLESTIMENTI</h3><p>Ogni dettaglio curato su misura</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/parco.jpeg" alt="Il Parco" loading="lazy">
+      <div class="gallery-card-label"><h3>IL PARCO</h3><p>Cena sotto le stelle tra luci dorate</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/sala.jpeg" alt="La Sala" loading="lazy">
+      <div class="gallery-card-label"><h3>LA SALA</h3><p>Eleganza con archi in pietra</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/coriandoli.jpg" alt="Bordo Piscina" loading="lazy">
+      <div class="gallery-card-label"><h3>BORDO PISCINA</h3><p>Dolci e torta con vista mare</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/entrata.jpeg" alt="L'Ingresso" loading="lazy">
+      <div class="gallery-card-label"><h3>L&rsquo;INGRESSO</h3><p>Il momento più atteso della serata</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/rum.jpg" alt="Angolo Rum" loading="lazy">
+      <div class="gallery-card-label"><h3>ANGOLO RUM &amp; SIGARI</h3><p>Un tocco di esclusività per gli ospiti</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/scintille.jpg" alt="La Festa" loading="lazy">
+      <div class="gallery-card-label"><h3>LA FESTA</h3><p>Emozioni e spettacolo fino all&rsquo;alba</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/torta.jpg" alt="La Torta" loading="lazy">
+      <div class="gallery-card-label"><h3>LA TORTA</h3><p>Il taglio più dolce della vostra vita</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/anelli.jpeg" alt="Gli Anelli" loading="lazy">
+      <div class="gallery-card-label"><h3>GLI ANELLI</h3><p>Il simbolo eterno del vostro amore</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/sposi.jpeg" alt="Gli Sposi" loading="lazy">
+      <div class="gallery-card-label"><h3>GLI SPOSI</h3><p>Momenti di pura emozione</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/firma.jpeg" alt="La Firma" loading="lazy">
+      <div class="gallery-card-label"><h3>LA FIRMA</h3><p>Il momento ufficiale, per sempre</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/archi.jpeg" alt="Gli Archi" loading="lazy">
+      <div class="gallery-card-label"><h3>GLI ARCHI</h3><p>Architettura storica e fascino senza tempo</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/lucip.jpeg" alt="Luci del Parco" loading="lazy">
+      <div class="gallery-card-label"><h3>LUCI DEL PARCO</h3><p>Atmosfere magiche al calar della notte</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/cena.jpeg" alt="La Cena" loading="lazy">
+      <div class="gallery-card-label"><h3>LA CENA</h3><p>Una tavola da sogno sotto le stelle</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/sedierito.jpg" alt="La Cerimonia" loading="lazy">
+      <div class="gallery-card-label"><h3>LA CERIMONIA</h3><p>Sedie bianche sul mare, un sogno reale</p></div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://hostegi.github.io/imgh/ritor.jpeg" alt="Rito all'Aperto" loading="lazy">
+      <div class="gallery-card-label"><h3>RITO ALL&rsquo;APERTO</h3><p>La natura come cornice perfetta</p></div>
+    </div>
   </div>
   <p class="gallery-hint">scorri per scoprire tutti gli spazi</p>
 </section>
 
+<!-- CHEF & SERVIZI -->
 <section class="sezione" id="chef" style="min-height:auto;padding:80px 24px;">
   <p class="tag-sezione">PERSONALIZZA IL TUO EVENTO</p>
   <h2 class="titolo-sezione">Chef Executive<br>Giovanni De Luca</h2>
   <div class="divisore"><div class="div-linea"></div><div class="div-gem"></div><div class="div-linea"></div></div>
-  <p style="max-width:540px;text-align:center;font-style:italic;color:#555;font-size:17px;line-height:1.8;margin-bottom:48px;">Una cucina che racconta il territorio calabrese con eleganza e creativita. Tre pacchetti pronti — o un menu costruito insieme, su misura per il vostro evento.</p>
+  <p style="max-width:540px;text-align:center;font-style:italic;color:#555;font-size:17px;line-height:1.8;margin-bottom:48px;">Una cucina che racconta il territorio calabrese con eleganza e creatività. Tre pacchetti pronti — o un menu costruito insieme, su misura per il vostro evento.</p>
   <div class="pannello-wrap">
     <button class="pannello-btn" onclick="togglePannello('menu-panel',this)"><span>I MENU DELLO CHEF</span><span class="icona">+</span></button>
     <div class="pannello-corpo" id="menu-panel">
@@ -235,50 +311,50 @@ footer{background:#070f24;padding:28px 24px;text-align:center;color:rgba(255,255
           <p class="menu-categoria">NELLA CORTE — APERITIVO</p>
           <p class="menu-voce">Alici marinate su crema di rucola · Polpo su crema di patate e olio al basilico</p>
           <p class="menu-voce">Tataki di tonno con cipolla croccante · Code di gamberi burro arancia e salsa americana</p>
-          <p class="menu-voce">Veli di spada fume al cantalupo · Pecorino semi stagionato con marmellate di agrumi</p>
+          <p class="menu-voce">Veli di spada fumè al cantalupo · Pecorino semi stagionato con marmellate di agrumi</p>
           <p class="menu-voce">Treccione di mozzarella del Pollino · Zizzona di Battipaglia · Bocconcini di bufala</p>
           <p class="menu-voce">Frittelle di fiori di zucca · Polpettine di carne · Parmigiana di melanzane</p>
           <p class="menu-categoria">IN SALA / PARCO</p>
-          <p class="menu-voce">Carnaroli di Sibari con gambero rosso e tartufo del Pollino · Tonnarelli all&apos;astice</p>
+          <p class="menu-voce">Carnaroli di Sibari con gambero rosso e tartufo del Pollino · Tonnarelli all&rsquo;astice</p>
           <p class="menu-voce">Trancia di pesce spada alle mandorle · Code di gamberoni in manto verde</p>
           <p class="menu-categoria">A BORDO PISCINA — DOLCI</p>
-          <p class="menu-voce">Savarin alla crema · Baba mignon al rhum · Profitteroles al cioccolato e al limone</p>
+          <p class="menu-voce">Savarin alla crema · Babà mignon al rhum · Profitteroles al cioccolato e al limone</p>
           <p class="menu-voce">Semifreddo al torroncino · Panna cotta ai frutti di bosco · Praline di fichi</p>
-          <p class="menu-voce" style="color:#C9A84C;">Torta · Cantina · Bar · Digestivi · Caffe</p>
+          <p class="menu-voce" style="color:#C9A84C;">Torta · Cantina · Bar · Digestivi · Caffè</p>
         </div>
         <div id="m-berenice" class="menu-content-panel">
           <p class="menu-categoria">NELLA CORTE — APERITIVO</p>
-          <p class="menu-voce">Polpo su crema di patate · Alici in tortiera arraganate · Baccala in pastella con pipi cruskj</p>
+          <p class="menu-voce">Polpo su crema di patate · Alici in tortiera arraganate · Baccalà in pastella con pipi cruskj</p>
           <p class="menu-voce">Involtino di spatola al cedro · Code di gamberi in salsa cocktail</p>
-          <p class="menu-voce">Veli di capocollo · Salsiccia e soppressata con focaccia all&apos;uvetta</p>
+          <p class="menu-voce">Veli di capocollo · Salsiccia e soppressata con focaccia all&rsquo;uvetta</p>
           <p class="menu-voce">Spiedini di caciocavallo silano e guanciale · Burratine pugliesi · Sfere di ricotta</p>
           <p class="menu-voce">Peperoni arrostiti · Spaghetti di zucchine alla mentuccia</p>
           <p class="menu-categoria">IN SALA / PARCO</p>
-          <p class="menu-voce">Foglie d&apos;ulivo in guazzetto di frutti di mare · Turbante di spigola con gamberone</p>
+          <p class="menu-voce">Foglie d&rsquo;ulivo in guazzetto di frutti di mare · Turbante di spigola con gamberone</p>
           <p class="menu-voce">Cubo di tonno al sesamo su cipolla di Tropea in agrodolce</p>
           <p class="menu-categoria">A BORDO PISCINA — DOLCI</p>
-          <p class="menu-voce">Savarin · Baba mignon · Profitteroles · Semifreddo ricotta e pera · Bavarese alla nocciola</p>
-          <p class="menu-voce" style="color:#C9A84C;">Torta · Cantina · Bar · Digestivi · Caffe</p>
+          <p class="menu-voce">Savarin · Babà mignon · Profitteroles · Semifreddo ricotta e pera · Bavarese alla nocciola</p>
+          <p class="menu-voce" style="color:#C9A84C;">Torta · Cantina · Bar · Digestivi · Caffè</p>
         </div>
         <div id="m-dioscuri" class="menu-content-panel">
           <p class="menu-categoria">NELLA CORTE — APERITIVO</p>
-          <p class="menu-voce">Bollicine · Tartine · Frittini · Polpo su crema di patate · Baccala in pastella</p>
-          <p class="menu-voce">Veli di capocollo · Salsiccia con focaccia all&apos;uvetta · Crostini con nduja</p>
+          <p class="menu-voce">Bollicine · Tartine · Frittini · Polpo su crema di patate · Baccalà in pastella</p>
+          <p class="menu-voce">Veli di capocollo · Salsiccia con focaccia all&rsquo;uvetta · Crostini con nduja</p>
           <p class="menu-voce">Spiedini di caciocavallo silano e guanciale · Burratine pugliesi</p>
           <p class="menu-voce">Frittelle di fiori di zucca · Quiche loraine · Sfoglia del buongustaio</p>
           <p class="menu-categoria">IN SALA / PARCO</p>
           <p class="menu-voce">Carnaroli di Sibari ai frutti di mare · Scrigno di crepes con fonduta vegetale</p>
           <p class="menu-voce">Turbante di spigola con gamberone al pane aromatico</p>
           <p class="menu-categoria">A BORDO PISCINA — DOLCI</p>
-          <p class="menu-voce">Savarin · Baba mignon · Profitteroles · Semifreddo · Tiramisu · Bavarese alla nocciola</p>
-          <p class="menu-voce" style="color:#C9A84C;">Torta · Cantina · Bar · Digestivi · Caffe</p>
+          <p class="menu-voce">Savarin · Babà mignon · Profitteroles · Semifreddo · Tiramisù · Bavarese alla nocciola</p>
+          <p class="menu-voce" style="color:#C9A84C;">Torta · Cantina · Bar · Digestivi · Caffè</p>
         </div>
         <div id="m-custom" class="menu-content-panel">
           <div class="menu-nota">
             <p style="font-family:'Cinzel',serif;color:#1A2B5F;font-size:11px;letter-spacing:2px;margin-bottom:14px;">MENU PERSONALIZZATO</p>
-            <p>Ogni grande storia merita un menu unico. Lo Chef Giovanni De Luca e a disposizione per costruire insieme a voi un percorso gastronomico su misura: dalle intolleranze alimentari alle tradizioni di famiglia, dal territorio calabrese alle contaminazioni internazionali.</p>
+            <p>Ogni grande storia merita un menu unico. Lo Chef Giovanni De Luca è a disposizione per costruire insieme a voi un percorso gastronomico su misura: dalle intolleranze alimentari alle tradizioni di famiglia, dal territorio calabrese alle contaminazioni internazionali.</p>
             <p style="margin-top:12px;">Per matrimoni, feste aziendali, lauree o qualsiasi evento speciale — scriveteci e fissiamo un incontro direttamente con lo Chef.</p>
-            <a href="https://wa.me/390982096091" style="display:inline-flex;align-items:center;gap:8px;margin-top:20px;background:#25D366;color:#fff;padding:12px 28px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;text-decoration:none;" target="_blank">
+            <a href="https://wa.me/39098296091" style="display:inline-flex;align-items:center;gap:8px;margin-top:20px;background:#25D366;color:#fff;padding:12px 28px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;text-decoration:none;" target="_blank">
               <svg style="width:16px;height:16px;fill:#fff;flex-shrink:0;" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
               PARLA CON NOI
             </a>
@@ -286,26 +362,27 @@ footer{background:#070f24;padding:28px 24px;text-align:center;color:rgba(255,255
         </div>
       </div>
     </div>
+
     <button class="pannello-btn" onclick="togglePannello('servizi-panel',this)" style="margin-top:8px;"><span>SERVIZI AGGIUNTIVI</span><span class="icona">+</span></button>
     <div class="pannello-corpo" id="servizi-panel">
       <div class="pannello-inner">
         <div class="servizi-grid">
-          <div class="servizio-item"><p class="servizio-nome">DJ E IMPIANTO LUCE AUDIO</p><p class="servizio-prezzo">da 350</p></div>
-          <div class="servizio-item"><p class="servizio-nome">SAX O VIOLINO</p><p class="servizio-prezzo">da 350</p></div>
-          <div class="servizio-item"><p class="servizio-nome">LIVE BAND</p><p class="servizio-prezzo">da 1.700</p></div>
-          <div class="servizio-item"><p class="servizio-nome">ANGOLO RUM E SIGARI</p><p class="servizio-prezzo">da 300</p></div>
-          <div class="servizio-item"><p class="servizio-nome">ALLESTIMENTO CONFETTATA</p><p class="servizio-prezzo">da 250</p></div>
-          <div class="servizio-item"><p class="servizio-nome">ALLESTIMENTO TAVOLI</p><p class="servizio-prezzo">da 15 a tavolo</p></div>
-          <div class="servizio-item"><p class="servizio-nome">SPETTACOLI PIROTECNICI</p><p class="servizio-prezzo">da 220</p></div>
-          <div class="servizio-item"><p class="servizio-nome">FONTANE FREDDE</p><p class="servizio-prezzo">da 500</p></div>
-          <div class="servizio-item"><p class="servizio-nome">FOTOGRAFO</p><p class="servizio-prezzo">da 1.500</p></div>
-          <div class="servizio-item"><p class="servizio-nome">SERVIZIO DRONE</p><p class="servizio-prezzo">da 70</p></div>
-          <div class="servizio-item"><p class="servizio-nome">ANGOLO SELFIE + STAMPE</p><p class="servizio-prezzo">da 200</p></div>
-          <div class="servizio-item"><p class="servizio-nome">ALBUM EVENTO</p><p class="servizio-prezzo">da 200</p></div>
-          <div class="servizio-item"><p class="servizio-nome">NOLEGGIO AUTO</p><p class="servizio-prezzo">da 300</p></div>
-          <div class="servizio-item"><p class="servizio-nome">PARRUCCHIERE</p><p class="servizio-prezzo">da 300</p></div>
-          <div class="servizio-item"><p class="servizio-nome">TRUCCO</p><p class="servizio-prezzo">da 250</p></div>
-          <div class="servizio-item"><p class="servizio-nome">ANIMAZIONE BAMBINI</p><p class="servizio-prezzo">da 200</p></div>
+          <div class="servizio-item"><p class="servizio-nome">DJ E IMPIANTO LUCE AUDIO</p><p class="servizio-prezzo">da €350</p></div>
+          <div class="servizio-item"><p class="servizio-nome">SAX O VIOLINO</p><p class="servizio-prezzo">da €350</p></div>
+          <div class="servizio-item"><p class="servizio-nome">LIVE BAND</p><p class="servizio-prezzo">da €1.700</p></div>
+          <div class="servizio-item"><p class="servizio-nome">ANGOLO RUM E SIGARI</p><p class="servizio-prezzo">da €300</p></div>
+          <div class="servizio-item"><p class="servizio-nome">ALLESTIMENTO CONFETTATA</p><p class="servizio-prezzo">da €250</p></div>
+          <div class="servizio-item"><p class="servizio-nome">ALLESTIMENTO TAVOLI</p><p class="servizio-prezzo">da €15 a tavolo</p></div>
+          <div class="servizio-item"><p class="servizio-nome">SPETTACOLI PIROTECNICI</p><p class="servizio-prezzo">da €220</p></div>
+          <div class="servizio-item"><p class="servizio-nome">FONTANE FREDDE</p><p class="servizio-prezzo">da €500</p></div>
+          <div class="servizio-item"><p class="servizio-nome">FOTOGRAFO</p><p class="servizio-prezzo">da €1.500</p></div>
+          <div class="servizio-item"><p class="servizio-nome">SERVIZIO DRONE</p><p class="servizio-prezzo">da €70</p></div>
+          <div class="servizio-item"><p class="servizio-nome">ANGOLO SELFIE + STAMPE</p><p class="servizio-prezzo">da €200</p></div>
+          <div class="servizio-item"><p class="servizio-nome">ALBUM EVENTO</p><p class="servizio-prezzo">da €200</p></div>
+          <div class="servizio-item"><p class="servizio-nome">NOLEGGIO AUTO</p><p class="servizio-prezzo">da €300</p></div>
+          <div class="servizio-item"><p class="servizio-nome">PARRUCCHIERE</p><p class="servizio-prezzo">da €300</p></div>
+          <div class="servizio-item"><p class="servizio-nome">TRUCCO</p><p class="servizio-prezzo">da €250</p></div>
+          <div class="servizio-item"><p class="servizio-nome">ANIMAZIONE BAMBINI</p><p class="servizio-prezzo">da €200</p></div>
           <div class="servizio-item"><p class="servizio-nome">EVENT / WEDDING PLANNER</p><p class="servizio-prezzo">su richiesta</p></div>
           <div class="servizio-item"><p class="servizio-nome">140 CAMERE PER GLI OSPITI</p><p class="servizio-prezzo">disponibili</p></div>
         </div>
@@ -315,20 +392,20 @@ footer{background:#070f24;padding:28px 24px;text-align:center;color:rgba(255,255
   </div>
 </section>
 
+<!-- AWARDS -->
 <section class="sezione" id="awards" style="background:#f8f5ef;">
   <p class="tag-sezione">RICONOSCIMENTI</p>
-  <h2 class="titolo-sezione">La qualita riconosciuta</h2>
+  <h2 class="titolo-sezione">La qualità riconosciuta</h2>
   <div class="divisore"><div class="div-linea"></div><div class="div-gem"></div><div class="div-linea"></div></div>
   <div class="awards-grid">
     <div class="award-card">
       <a target="_blank" href="https://www.matrimonio.com/hotel-ricevimenti/hotel-delle-stelle-resort--e249145" rel="nofollow">
         <img src="https://cdn1.matrimonio.com/img/badges/2026/badge-weddingawards_it_IT.jpg" alt="Wedding Awards 2026" style="max-width:130px;">
       </a>
-      <p class="award-label">WEDDING AWARDS 2026<br>Matrimonio.com</p>
     </div>
     <div class="award-card">
       <div class="ellespose-badge">
-        <p class="ellespose-label">FEATURED ON</p>
+        <p class="ellespose-label">COME APPARSI SU</p>
         <span class="ellespose-title">Ellespose</span>
         <p class="ellespose-sub">TRIMESTRALE N.39 · GENNAIO 2026</p>
       </div>
@@ -339,18 +416,19 @@ footer{background:#070f24;padding:28px 24px;text-align:center;color:rgba(255,255
   </a>
 </section>
 
+<!-- CONTATTI -->
 <section class="sezione contatti-bg" id="contatti">
   <div class="contatti-content">
     <p class="tag-sezione">INIZIA A SOGNARE</p>
     <h2 class="titolo-sezione">Parliamo del vostro evento</h2>
     <div class="divisore"><div class="div-linea" style="background:rgba(201,168,76,0.4)"></div><div class="div-gem"></div><div class="div-linea" style="background:rgba(201,168,76,0.4)"></div></div>
     <div class="contatti-info">
-      <p>Viale della Liberta, 29 · 87020 Sangineto Lido (CS)</p>
+      <p>Viale della Libertà, 29 · 87020 Sangineto Lido (CS)</p>
       <p><a href="tel:098296091">0982 96091</a></p>
       <p><a href="mailto:eventi@hoteldellestelle.it">eventi@hoteldellestelle.it</a></p>
       <p><a href="http://www.hoteldellestelle.it" target="_blank">www.hoteldellestelle.it</a></p>
     </div>
-    <a href="https://wa.me/390982096091" class="wa-btn-contatti" target="_blank">
+    <a href="https://wa.me/39098296091" class="wa-btn-contatti" target="_blank">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       0982 96091
     </a>
@@ -368,8 +446,9 @@ footer{background:#070f24;padding:28px 24px;text-align:center;color:rgba(255,255
 </section>
 
 <footer>
+  <img src="https://hostegi.github.io/imgh/logosfondotrasparente.svg" alt="Hotel delle Stelle" style="width:80px;height:auto;display:block;margin:0 auto 16px;opacity:0.6;">
   <p>&#169; Hotel delle Stelle Beach Resort &middot; PERSEA S.r.l.s. &middot; P.IVA 03895690786</p>
-  <p style="margin-top:8px;opacity:.5;">Viale della Liberta, 29 &middot; 87020 Sangineto Lido (CS)</p>
+  <p style="margin-top:8px;opacity:.5;">Viale della Libertà, 29 &middot; 87020 Sangineto Lido (CS)</p>
 </footer>
 
 <script>
@@ -383,10 +462,7 @@ var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){i
 document.querySelectorAll('.sezione').forEach(function(s){obs.observe(s);});
 var heroObs=new IntersectionObserver(function(entries){entries.forEach(function(e){navLat.classList.toggle('visibile',!e.isIntersecting);if(e.isIntersecting){dots.forEach(function(d){d.classList.remove('attivo')});if(dots[0])dots[0].classList.add('attivo');}});},{threshold:0.3});
 heroObs.observe(document.getElementById('hero'));
-document.querySelectorAll('.gallery-card img').forEach(function(img){img.addEventListener('error',function(){this.style.display='none';});});
+document.querySelectorAll('.gallery-card img').forEach(function(img){img.addEventListener('error',function(){this.parentElement.style.display='none';});});
 </script>
-<div id="wp-ratedWA" style="display:none"></div>
-<script src="https://cdn1.matrimonio.com/_js/wp-rated.js?v=4"></script>
-<script>if(typeof wpShowRatedWAv3==='function')wpShowRatedWAv3('249145','2026');</script>
 </body>
 </html>
